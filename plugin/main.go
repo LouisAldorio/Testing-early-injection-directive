@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"myapp/inception"
 	"os"
+
+	"github.com/LouisAldorio/Testing-early-injection-directive/inception"
 
 	"github.com/99designs/gqlgen/api"
 	"github.com/99designs/gqlgen/codegen/config"

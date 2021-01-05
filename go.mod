@@ -1,4 +1,4 @@
-module myapp
+module github.com/LouisAldorio/Testing-early-injection-directive
 
 go 1.15
 
