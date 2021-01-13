@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/dgrijalva/jwt-go"
 )
@@ -20,7 +21,7 @@ type UserClaim struct {
 	jwt.StandardClaims
 }
 
-var jwtKey = []byte("secret")
+var jwtKey = os.Getenv("KEY")
 
 func Auth() func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
